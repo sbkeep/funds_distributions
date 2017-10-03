@@ -1,0 +1,14 @@
+{
+  "name": "fees_and_distributions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "skye blanding",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Fees/Distributions</title>
+
+    <style>
+      * {
+        user-select: none;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column;
+        padding: 10vh 10vw;
+        font-size: 20px;
+        color: rgba(80,80,80,1);
+      }
+
+      .test {
+        width: 200px;
+        height: 100px;
+        border-radius: 5%;
+        border: 2px solid rgba(98,127,67,1);
+        background: rgba(83,143,67,.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        transition: .1s;
+      }
+
+      .test:hover {
+        transform: scale(1.01);
+        transition: .2s;
+      }
+
+      .test:active {
+        color: rgba(235,255,235,.9);
+        transform: scale(.99);
+        transition: .2s;
+      }
+    </style>
+
+</head>
+<body>
+
+  <div>test fetch requests to /fees and /distributions with mock objects, output to console</div>
+
+  <div class='test' id='test-fees' onclick='fetchFees()'>TEST FEES</div>
+  <div class='test' id='test-dists' onclick='fetchDists()'>TEST DISTS</div>
+  <script src='app.js'></script>
+</body>
+
+</html>
